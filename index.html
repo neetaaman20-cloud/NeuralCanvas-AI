@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NeuralCanvas AI</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <h1>NeuralCanvas AI</h1>
+        <p>Draw a digit (0-9) clearly</p>
+        
+        <div class="canvas-container">
+            <canvas id="mainCanvas" width="280" height="280"></canvas>
+        </div>
+
+        <div class="controls">
+            <button id="clearBtn">Clear Canvas</button>
+            <button id="predictBtn">Predict Digit</button>
+        </div>
+
+        <div id="result-area">
+            <div class="preview-box">
+                <p>AI View (28x28):</p>
+                <canvas id="previewCanvas" width="28" height="28"></canvas>
+            </div>
+            <h3>Status: <span id="status">Ready</span></h3>
+        </div>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
